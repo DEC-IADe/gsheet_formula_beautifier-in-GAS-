@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ 
+
+<head>
+  <title>Update formula</title>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.css' rel='stylesheet'>
+  <!-- The link above loaded the core css -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.js'></script>
+<!-- The script above loaded the core editor -->
+  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/spreadsheet/spreadsheet.min.js'></script>
+	
+<!-- The script above loaded the highlighting for Spreadsheet -->
+</head>
+<body>
+  
+
+ 
+
+  <script>
+
+
+var myCodeMirror = CodeMirror(document.body, {
+  value: "function myScript(){return 100;}\n",
+  mode:  "spreadsheet",
+  value: "=enter formula"
+});
+
+myCodeMirror.setSize("100%", 610);
+
+	</script>
+	
+
+
+</body>
+
+
+</html>
